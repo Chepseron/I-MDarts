@@ -24,17 +24,16 @@ class Darts {
 
     public static void main() {
         try {
-            Boolean end = false;
-            while (end == false) {
-                Darts dart = new Darts();
-                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-                System.out.println("X cordinate of the target:");
-                double x = br.read();
-                System.out.println("Y cordinate of the target:");
-                double y = br.read();
-                System.out.println("Your score:");
-                dart.score(x, y);
-            }
+
+            Darts dart = new Darts();
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("X cordinate of the target:");
+            String x = br.readLine();
+            System.out.println("Y cordinate of the target:");
+            String y = br.readLine();
+            System.out.println("Your score:");
+            dart.score(Double.parseDouble(x), Double.parseDouble(y));
+
         } catch (IOException ex) {
             Logger.getLogger(Darts.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("We could not find your score, please play again");
