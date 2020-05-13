@@ -11,6 +11,7 @@ class Darts {
     private double result;
 
     int score(double x, double y) {
+        //check the square of the x and y cordinates
         result = (x * x) + (y * y);
         if (result <= 1) {
             return 10;

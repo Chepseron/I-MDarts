@@ -16,6 +16,7 @@ import static org.junit.Assert.*;
  *
  * @author Amon.Sabul
  */
+//Test class for the darts game
 public class DartsTest {
     
     public DartsTest() {
